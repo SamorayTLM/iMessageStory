@@ -1,0 +1,67 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px 0;
+    max-width: 75%;
+    word-wrap: break-word;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly below */
+    transition: all 0.5s ease; /* Smooth animation */
+}
+
+.message.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sender {
+    background-color: #007aff;
+    color: white;
+    margin-left: auto;
+    text-align: left;
+}
+
+.receiver {
+    background-color: #e5e5ea;
+    color: black;
+    margin-right: auto;
+    text-align: left;
+}
+
+.sender p, .receiver p {
+    margin: 0;
+}
+
+#download-video {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#download-video:hover {
+    background-color: #005bb5;
+}
